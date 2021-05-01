@@ -1,0 +1,26 @@
+<phpunit
+        bootstrap="tests/bootstrap.php"
+        colors="true"
+        backupGlobals="false"
+        backupStaticAttributes="false"
+        beStrictAboutChangesToGlobalState="true"
+        beStrictAboutOutputDuringTests="true"
+        beStrictAboutTestsThatDoNotTestAnything="true"
+        beStrictAboutTodoAnnotatedTests="true"
+        failOnRisky="true"
+        failOnWarning="true"
+>
+    <testsuites>
+        <testsuite name="main">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log
+                type="coverage-text"
+                target="php://stdout"
+                showUncoveredFiles="true"
+                showOnlySummary="true"
+        />
+    </logging>
+</phpunit>
